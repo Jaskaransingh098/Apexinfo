@@ -1,5 +1,5 @@
 import React from "react";
-import "./commonCta.css";
+import "./CommonCta.css";
 
 function CommonCta() {
   const PhoneIcon = () => (
