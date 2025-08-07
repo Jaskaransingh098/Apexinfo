@@ -1,0 +1,485 @@
+.call-center-page {
+    margin-top: 54px;
+    height: 100vh auto;
+}
+
+.call-center-hero-section {
+    height: 45vh;
+    width: 100%;
+    background-image: url(/public/services-pics/call-center/call-center-services.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.call-center-hero-section h2 {
+    color: #fff;
+    padding-top: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+
+.call-center-hero-section p {
+    color: #fff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 300;
+}
+
+.call-center-hero-subtext {
+    color: #fff;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+.common-cta-section {
+    position: relative;
+    z-index: 2;
+    /* width: 80%; */
+    margin-left: 28%;
+    margin-top: 50px;
+}
+
+/* /////////////////////  */
+
+.callCenter-wrapper {
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    gap: 2rem;
+    /* Space between heading and the panels container */
+}
+
+.callCenter-main-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #c00000;
+    text-align: center;
+    margin: 0;
+}
+
+/* Main container for the panels */
+.callCenter-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    /* Changed to white as per the image */
+    color: #333;
+    /* Darker text for readability on a white background */
+    padding: 2.5rem;
+    /* border-radius: 12px; */
+    font-family: 'Roboto', sans-serif;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* Softer shadow */
+    gap: 2rem;
+    /* Space between the panels */
+    /* border: 1px solid #e0e0e0; */
+    width: 90%;
+    /* Ensure it takes full width of its parent */
+}
+
+/* Styling for each panel (both left and right) */
+.callCenter-panel {
+    flex: 1;
+    /* Each panel takes equal space */
+    min-width: 300px;
+    /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Space between elements inside a panel */
+}
+
+/* Add a separator line for larger screens */
+@media (min-width: 769px) {
+    .callCenter-panel:not(:last-child) {
+        border-right: 1px solid #e0e0e0;
+        padding-right: 2rem;
+    }
+}
+
+.callCenter-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #c00000;
+    /* Red color for titles */
+    margin-bottom: 14px;
+}
+
+.callCenter-subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.callCenter-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.callCenter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.callCenter-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .callCenter-section-container {
+        flex-direction: column;
+        /* Stack panels vertically */
+        padding: 2rem;
+    }
+
+    .callCenter-main-heading {
+        font-size: 2rem;
+    }
+}
+
+/* /////////////////////////  */
+
+
+
+/* Main container for the panels */
+.call-useCases-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: #333;
+    padding: 2.5rem;
+    /* border-radius: 12px; */
+    font-family: 'Roboto', sans-serif;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    gap: 2rem;
+    /* border: 1px solid #e0e0e0; */
+    width: 90%;
+}
+
+/* Styling for each panel */
+.call-useCases-panel {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 24%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Add a separator line for larger screens */
+@media (min-width: 769px) {
+    .call-useCases-panel:not(:last-child) {
+        border-right: 1px solid #e0e0e0;
+        padding-right: 2rem;
+    }
+}
+
+.call-useCases-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #c00000;
+    margin-bottom: 24px;
+    /* Red color for titles */
+
+    line-height: 1.5;
+    /* Adjust line height for longer titles */
+}
+
+.call-useCases-subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.call-useCases-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.call-useCases-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .call-useCases-section-container {
+        flex-direction: column;
+    }
+}
+
+
+/* /////////////////////////  */
+
+
+.call-industries-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    /* Light grey background like the image */
+}
+
+.call-industries-main-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #c00000;
+    /* Red color for the heading */
+    text-align: center;
+    margin: 0;
+}
+
+.call-industries-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    /* Max width for the grid */
+}
+
+.call-industries-card {
+    display: flex;
+    align-items: flex-start;
+    /* Align icon to the top of the text */
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    /* Transparent background for the cards */
+}
+
+.call-industries-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c00000;
+    /* Red background for the icon */
+    border-radius: 50%;
+    min-width: 48px;
+    height: 48px;
+    color: white;
+}
+
+.call-industries-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.call-industries-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.call-industries-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.call-industries-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .call-industries-main-heading {
+        font-size: 1.8rem;
+    }
+
+    .call-industries-grid-container {
+        grid-template-columns: 1fr;
+        /* Stack to a single column */
+    }
+}
+
+
+
+/* /////////////////////////////////  */
+
+
+
+.call-expertise-wrapper {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.call-expertise-section {
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.call-expertise-section:last-child {
+    border-bottom: none;
+}
+
+.call-expertise-section:nth-child(odd) {
+    background-color: #f7f8fa;
+    /* Alternate background color for sections */
+}
+.call-expertise-title{
+    font-weight: 700;
+    text-align: center;
+    color: #c00000;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.call-expertise-main-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #c00000;
+    margin-bottom: 2.5rem;
+}
+
+.call-expertise-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.call-expertise-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-top: 4px solid #c00000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.call-expertise-sub-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.call-expertise-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.call-expertise-list li {
+    line-height: 1.6;
+}
+
+.arrow-list li {
+    padding-left: 2em;
+    position: relative;
+}
+
+.arrow-list li::before {
+    content: '👉';
+    position: absolute;
+    left: 0;
+    color: #c00000;
+}
+
+.result-card {
+    background: linear-gradient(135deg, #c00000, #8b0000);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-card .call-expertise-sub-title {
+    color: white;
+}
+
+.result-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Table Styles */
+.call-expertise-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    /* For responsiveness */
+}
+
+.call-expertise-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    overflow: hidden;
+    /* To make border-radius work on table */
+}
+
+.call-expertise-table th,
+.call-expertise-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.call-expertise-table thead th {
+    background-color: #c00000;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.call-expertise-table tbody tr {
+    background-color: #fff;
+}
+
+.call-expertise-table tbody tr:nth-of-type(even) {
+    background-color: #f7f8fa;
+}
+
+.call-expertise-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .call-expertise-main-title {
+        font-size: 1.8rem;
+    }
+}

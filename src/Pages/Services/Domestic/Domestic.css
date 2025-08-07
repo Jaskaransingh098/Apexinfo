@@ -1,0 +1,433 @@
+.domestic-page {
+    padding-top: 54px;
+}
+
+
+.domestic-hero-section {
+    padding-top: 150px;
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-image: url("/services-pics/call-center/domestic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.domestic-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 50% darkness */
+    z-index: 1;
+}
+
+
+.domestic-hero-section h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+
+.domestic-hero-section p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 300;
+}
+
+.domestic-hero-subtext {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+
+
+.trade-operations-section-wrapper {
+    margin-top: 190px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.trade-operations-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+    /* Space between the two panels */
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+.trade-operations-left-panel {
+    border-right: 2px solid gray;
+    flex: 1;
+    min-width: 300px;
+}
+
+.trade-operations-right-panel {
+    flex: 1.5;
+    /* Give more space to the text content */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Space between paragraphs */
+}
+
+.trade-operations-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #c00000;
+    /* Red color for the title */
+    line-height: 1.3;
+    margin: 0;
+}
+
+.trade-operations-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .trade-operations-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .trade-operations-title {
+        font-size: 2rem;
+    }
+}
+
+
+.domestic-our-services-wrapper {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8fa;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    /* To stack heading and container */
+    align-items: center;
+    /* To center the container */
+    gap: 3rem;
+    /* Space between heading and container */
+}
+
+.domestic-our-services-main-title {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+    color: #c00000;
+    text-align: center;
+    margin: 0;
+}
+
+.domestic-our-services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two-column layout */
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+}
+
+.domestic-our-services-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.domestic-our-services-panel:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 3rem;
+}
+
+.domestic-our-services-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c00000;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.domestic-our-services-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.domestic-our-services-sub-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.domestic-our-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.domestic-our-services-list li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.domestic-our-services-footer {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 1rem;
+    border-top: 2px solid #c00000;
+    padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .domestic-our-services-container {
+        grid-template-columns: 1fr;
+        /* Stack to a single column */
+    }
+
+    .domestic-our-services-panel:not(:last-child) {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+
+/* --- Section 1: Why Work with Apex? --- */
+.domestic-why-apex-features-wrapper {
+    font-family: 'Roboto', sans-serif;
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.domestic-why-apex-features-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 3rem;
+}
+
+.domestic-why-apex-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.domestic-why-apex-feature-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.domestic-why-apex-feature-icon {
+    color: #c00000;
+    background-color: #fde8e8;
+    border-radius: 50%;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.domestic-why-apex-feature-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+}
+
+/* --- Section 2: Who Should Consider This? --- */
+.domestic-who-wrapper {
+    height: 60vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.domestic-who-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.domestic-who-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 2rem;
+}
+
+.domestic-who-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.domestic-who-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.domestic-who-list li svg {
+    color: #c00000;
+}
+
+.domestic-who-graphic {
+    height: 30vh;
+    /* background: #f7f8fa; */
+    background-image: url("/public/services-pics/call-center/handshake.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    color: #c00000;
+    border: 1px solid #e0e0e0;
+}
+
+.domestic-who-graphic svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.domestic-who-graphic p {
+    font-size: 1.5rem;
+    padding-top: 100px;
+    font-weight: 700;
+    margin: 0;
+    color: #c00000;
+}
+
+/* --- Section 3: Let's Help You --- */
+.domestic-cta-wrapper {
+    font-family: 'Roboto', sans-serif;
+    padding: 5rem 2rem;
+    background-color: #c00000;
+    color: #fff;
+    text-align: center;
+}
+
+.domestic-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.domestic-cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.domestic-cta-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.domestic-cta-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+}
+
+.domestic-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #fff;
+    color: #c00000;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.domestic-cta-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.domestic-cta-footer {
+    margin-top: 2rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .domestic-who-container {
+        grid-template-columns: 1fr;
+    }
+
+    .domestic-who-graphic {
+        order: -1;
+        /* Move graphic to the top on mobile */
+    }
+}

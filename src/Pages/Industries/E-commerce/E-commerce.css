@@ -1,0 +1,535 @@
+.e-commerce-section {
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background: linear-gradient(123deg, rgba(250, 237, 237, 1) 0%, rgba(49, 115, 66, 1) 100%);
+}
+
+.ecommerce-hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.ecommerce-hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    max-width: 1400px;
+    width: 100%;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.ecommerce-hero-illustration img {
+    width: 700px;
+    max-width: 100%;
+    height: 77vh;
+    object-fit: cover;
+    border-radius: 40px;
+    animation: ecommerce-float 3s ease-in-out infinite;
+}
+
+@keyframes ecommerce-float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(26px);
+    }
+}
+
+.ecommerce-hero-text {
+    max-width: 600px;
+    padding-top: 60px;
+    margin-left: auto;
+    padding-left: 40px;
+}
+
+.ecommerce-hero-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ecommerce-subheadline {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.ecommerce-overview {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.ecommerce-cta-btn {
+    background-color: #ffb703;
+    color: #000;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ecommerce-cta-btn:hover {
+    background-color: #ffa200;
+}
+
+.ecom-challenges-section {
+    margin-top: 150px;
+    margin-bottom: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ecom-challenges-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.ecom-challenges-text {
+    flex: 0 0 35%;
+    padding-top: 150px;
+}
+
+.ecom-challenges-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    padding-left: 40px;
+}
+
+.ecom-challenges-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    padding-left: 40px;
+}
+
+.ecom-challenges-cards {
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.ecom-challenges-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.ecom-challenges-cards::-webkit-scrollbar-thumb {
+    /* background-color: #ccc; */
+    border-radius: 4px;
+}
+
+
+
+.ecom-challenge-card {
+    flex: 0 0 280px;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ecom-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.ecom-challenge-card:hover {
+    transform: translateY(-6px);
+}
+
+.ecom-card-overlay {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 20px;
+}
+
+.ecom-card-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+
+}
+
+.ecom-card-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* our solution section  */
+
+
+.ecom-solutions-section-modern {
+    color: white;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.ecom-solutions-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0a3822;
+    margin-bottom: 60px;
+}
+
+.ecom-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-card-modern {
+    background: #0d2b27;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(0, 255, 180, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #00e67630;
+}
+
+.solution-card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 180, 0.3);
+    border: 1px solid #00e67680;
+}
+
+.icon-wrap {
+    background-color: #00382f;
+    padding: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.solution-card-modern:hover .icon-wrap {
+    background-color: #00e676;
+}
+
+.icon-wrap svg {
+    color: white;
+    font-size: 28px;
+}
+
+.solution-text {
+    font-size: 1rem;
+    color: #e0f7fa;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* how it works */
+
+.ecom-how-it-works-section {
+    padding: 70px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.how-title {
+    font-size: 3rem;
+    color: #2e7d32;
+    margin-bottom: 60px;
+}
+
+.how-timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.how-step {
+    flex: 1 1 200px;
+    background: #214032;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 4px solid #72e087;
+}
+
+.how-step:hover {
+    transform: translateY(-6px);
+    background: #295943;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.step-circle {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 1rem;
+    /* color: #444; */
+    line-height: 1.5;
+}
+
+/* why companies choose apex */
+
+
+.why-apex-section {
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 40px;
+    background-color: var(--shadow-blue);
+    color: rgb(46, 40, 40);
+    text-align: center;
+}
+
+.why-apex-title {
+    font-size: 2.8rem;
+    margin-bottom: 100px;
+    /* color: rgb(6, 63, 6); */
+    color: #0a3822;
+}
+
+.why-apex-layout {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.why-apex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    max-width: 280px;
+}
+
+
+.why-apex-image {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.why-apex-image img {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.why-apex-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    padding: 24px;
+    width: 260px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 7px solid #317342;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-apex-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* case studies  */
+
+.ecom-case-studies-section-alt {
+
+    color: white;
+    margin-top: 60px;
+}
+
+.case-section-title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #0a3822;
+}
+
+.case-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.case-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.case-image,
+.case-content {
+    flex: 1;
+    width: 50%;
+    height: auto;
+}
+
+.case-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.case-content {
+    background-color: #17352a;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.case-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cfd8dc;
+}
+
+
+/* CTA section  */
+
+.ecom-cta-section {
+    background: #1a392c;
+    /* deep green to match your brand */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ecom-cta-section h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #72e087;
+    /* light green accent */
+}
+
+.ecom-cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #e0f7fa;
+}
+
+.ecom-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ecom-btn-primary,
+.ecom-btn-secondary {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ecom-btn-primary {
+    background-color: #ffb703;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.ecom-btn-primary:hover {
+    background-color: #ffa200;
+}
+
+.ecom-btn-secondary {
+    background-color: transparent;
+    border: 2px solid #ffb703;
+    color: #ffb703;
+    text-decoration: none;
+}
+
+.ecom-btn-secondary:hover {
+    background-color: #ffb703;
+    color: #1a1a1a;
+}

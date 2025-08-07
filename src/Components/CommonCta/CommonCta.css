@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Main container for the entire section */
+.commonCta-section-container {
+    display: flex;
+    flex-wrap: no-wrap;
+    height: 34vh;
+    width: 60%;
+    /* Allows items to wrap to the next line on smaller screens */
+    background-color: #c00000;
+    /* Dark red background */
+    color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    /* Space between left and right panels */
+    align-items: center;
+}
+
+/* Left panel containing the main title and subtitle */
+.commonCta-left-panel {
+    flex: 1;
+    /* Allows the left panel to grow */
+    min-width: 280px;
+    /* Ensures the panel doesn't get too squished */
+    padding-right: 2rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    /* Separator line */
+}
+
+.commonCta-left-panel h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+}
+
+.commonCta-left-panel p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    opacity: 0.9;
+
+}
+
+/* Right panel containing the contact details */
+.commonCta-right-panel {
+    flex: 1.5;
+    /* Allows the right panel to take more space */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Space between contact items */
+    min-width: 300px;
+}
+
+/* Individual contact item (icon + text) */
+.commonCta-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* Space between icon and text */
+}
+
+.commonCta-info-item svg {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+    color: white;
+    /* For fill-based icons like WhatsApp */
+}
+
+.commonCta-info-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect on hover */
+.commonCta-info-item a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.commonCta-info-item a:hover {
+    color: #ffd700;
+    /* Gold color on hover for highlight */
+}
+
+.commonCta-info-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Privacy policy link styling */
+.commonCta-privacy-policy {
+    margin-top: 1rem;
+    align-self: flex-start;
+    /* Aligns to the start of the flex container */
+}
+
+.commonCta-privacy-policy a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.commonCta-privacy-policy a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .commonCta-section-container {
+        flex-direction: column;
+        /* Stack panels vertically */
+        padding: 2rem;
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .commonCta-left-panel {
+        border-right: none;
+        /* Remove separator line on small screens */
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        /* Add separator below */
+        padding-right: 0;
+        padding-bottom: 2rem;
+        /* Add padding at the bottom */
+        width: 100%;
+    }
+
+    .commonCta-right-panel {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .commonCta-left-panel h2 {
+        font-size: 2rem;
+    }
+}
