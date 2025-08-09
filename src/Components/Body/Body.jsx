@@ -50,12 +50,12 @@ function Body() {
         "Support for local business operation and trade within India.",
         link: "/domestic",
     },
-    {
-      icon: <MdOutlineImportExport size={32} />,
-      title: "International Trade Assistance",
-      description: "End-to-end solutions for global trade operations.",
-      link: "/",
-    },
+    // {
+    //   icon: <MdOutlineImportExport size={32} />,
+    //   title: "International Trade Assistance",
+    //   description: "End-to-end solutions for global trade operations.",
+    //   link: "/",
+    // },
     {
       icon: <MdOutlineSupportAgent size={32} />,
       title: "Call Center Services",
@@ -66,6 +66,7 @@ function Body() {
       icon: <FaCalculator size={32} />,
       title: "Accounting Services",
       description: "Reliable bookkeeping and financial management services.",
+      link: "/accounting",
     },
     {
       icon: <FiGlobe size={32} />,
@@ -77,16 +78,19 @@ function Body() {
       icon: <FaPaintBrush size={32} />,
       title: "Creative Design Services",
       description: "Brand-focused graphic, UI/UX, and visual content design.",
+      link: "/creative",
     },
     {
       icon: <MdOutlineCode size={32} />,
       title: "Software Development",
       description: "Custom software and backend solutions tailored to needs.",
+      link: "/software",
     },
     {
       icon: <FaLaptopCode size={32} />,
       title: "Website Development Services",
       description: "Fast, responsive, and SEO-ready websites.",
+      link: "/website",
     },
   ];
 
@@ -582,7 +586,7 @@ function Body() {
           </button>
         </section>
 
-        <section className="our-services-selector-body">
+        <section className="our-services-selector-body" id="industries">
           {/* Header Section */}
           <div className="our-services-header-container">
             <h1 className="our-services-animate-fadeInTop our-services-delay-300">

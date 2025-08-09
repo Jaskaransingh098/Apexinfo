@@ -1,0 +1,423 @@
+.website-page {
+    margin-top: 54px;
+}
+
+.website-hero-section {
+    padding-top: 180px;
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-image: url("/services-pics/call-center/website.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.website-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 50% darkness */
+    z-index: 1;
+}
+
+
+.website-hero-section h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+
+.website-hero-section p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 300;
+}
+
+.website-hero-subtext {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+
+
+.website-section-wrapper {
+    margin-top: 13rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.website-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+    /* Space between the two panels */
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+.website-left-panel {
+    flex: 1;
+    border-right: 2px solid gray;
+    min-width: 300px;
+}
+
+.website-right-panel {
+    flex: 1.5;
+    /* Give more space to the text content */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Space between paragraphs */
+}
+
+.website-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    /* Red color for the title */
+    line-height: 1.3;
+    margin: 0;
+}
+
+.website-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .website-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .website-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+.website-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 3rem;
+}
+
+/* --- Core Services Section --- */
+.website-core-services-wrapper {
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.website-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.website-service-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.website-service-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.website-service-list {
+    list-style-type: '✔️';
+    padding-left: 1.5rem;
+}
+
+.website-service-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- What Sets Apex Apart Section --- */
+.website-sets-apart-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.website-sets-apart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.website-sets-apart-card {
+    background: #f7f8fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-sets-apart-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.website-sets-apart-icon {
+    color: #c00000;
+    background-color: #fde8e8;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.website-sets-apart-card:hover .website-sets-apart-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.website-sets-apart-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+/* --- Industries Section --- */
+.website-industries-wrapper {
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.website-industries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.website-industry-tag {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: default;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.website-industry-tag:hover {
+    transform: scale(1.05);
+    background-color: #c00000;
+    color: #fff;
+    border-color: #c00000;
+}
+
+/* --- Project Flow Section --- */
+.website-project-flow-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.website-project-flow-timeline {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.website-project-flow-timeline::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    right: 5%;
+    height: 4px;
+    background: #e0e0e0;
+    z-index: 1;
+}
+
+.website-project-flow-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.website-project-flow-step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #e0e0e0;
+    margin: 0 auto 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.website-project-flow-step:hover span {
+    background: #c00000;
+    color: #fff;
+    border-color: #c00000;
+    transform: scale(1.1);
+}
+
+/* --- Tech Stack Section --- */
+.website-tech-stack-wrapper {
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.website-tech-stack-subtitle {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.website-tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.website-tech-stack-category {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.website-tech-stack-category h3 {
+    color: #c00000;
+    margin-top: 0;
+}
+
+/* --- Final CTA Section --- */
+.website-final-cta-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.website-final-cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 1rem;
+}
+
+.website-final-cta-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.website-final-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #c00000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.website-final-cta-button:hover {
+    background-color: #a00000;
+    transform: translateY(-3px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .website-project-flow-timeline {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .website-project-flow-timeline::before {
+        display: none;
+    }
+
+    .website-project-flow-step span {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .website-section-title {
+        font-size: 2rem;
+    }
+}

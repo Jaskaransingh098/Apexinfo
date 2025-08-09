@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="logo">
           <Link to="/" className="logo-text">
-            ApexInfoTech
+            Apex Info Tech
             <br />
             <span className="logo-subtext">Solutions</span>
           </Link>
@@ -40,12 +40,11 @@ function Navbar() {
         <Link to="/domestic">Domestic & International Trade Assistance</Link>
         <Link to="/callcenter">Call Center Services</Link>
         <Link to="/data">Data Management & Support Services</Link>
-        <Link to="/services/creative-design">Creative Design Services</Link>
-        <Link to="/services/creative-design">Software development</Link>
+        <Link to="/creative">Creative Design Services</Link>
+        <Link to="/software">Software development</Link>
         <Link to="/accounting">Accounting Services</Link>
-        <Link to="/services/creative-design">Website Development Services</Link>
-        <Link to="/services/creative-design">Digital Marketing Services</Link>
-        <Link to="/services/creative-design">Import & Export Assistance</Link>
+        <Link to="/website">Website Development Services</Link>
+        <Link to="/digital">Digital Marketing Services</Link>
       </div>
       {/* {showForm && <ContactFormPopup onClose={() => setShowForm(false)} />} */}
     </>

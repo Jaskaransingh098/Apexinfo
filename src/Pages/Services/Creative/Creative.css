@@ -1,0 +1,265 @@
+.creative-page {
+    padding-top: 54px;
+}
+
+.creative-hero-section {
+    padding-top: 180px;
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-image: url("/services-pics/call-center/creative.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.creative-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 50% darkness */
+    z-index: 1;
+}
+
+
+.creative-hero-section h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+
+.creative-hero-section p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 300;
+}
+
+.creative-hero-subtext {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+
+
+.creative-section-wrapper {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    margin-top: 16rem;
+    /* padding: 2rem 2rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.creative-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+    /* Space between the two panels */
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+.creative-left-panel {
+    flex: 1;
+    min-width: 300px;
+    border-right: 2px solid gray;
+}
+
+.creative-right-panel {
+    flex: 1.5;
+    /* Give more space to the text content */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Space between paragraphs */
+}
+
+.creative-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    /* Red color for the title */
+    line-height: 1.3;
+    margin: 0;
+}
+
+.creative-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .creative-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .creative-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+.creative-section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.creative-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 1rem;
+}
+
+.creative-section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- Section 1: What We Offer --- */
+.creative-what-we-offer-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.creative-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.creative-service-card {
+    background: #f7f8fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creative-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.creative-service-icon {
+    color: #c00000;
+    margin-bottom: 1rem;
+}
+
+.creative-service-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.creative-service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Section 2: Why Choose Apex --- */
+.creative-why-choose-wrapper {
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.creative-why-choose-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.creative-why-choose-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+}
+
+.creative-why-choose-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.creative-checkmark-icon {
+    color: #c00000;
+}
+
+/* --- Section 3: Final CTA --- */
+.creative-final-cta-wrapper {
+    /* padding: 3rem 2rem; */
+    padding-top: 5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.creative-final-cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 1rem;
+}
+
+.creative-final-cta-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .creative-section-title {
+        font-size: 2rem;
+    }
+
+    .creative-why-choose-list {
+        grid-template-columns: 1fr;
+    }
+}

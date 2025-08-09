@@ -1,0 +1,261 @@
+.accounting-page {
+    margin-top: 54px;
+}
+
+
+.accounting-hero-section {
+    padding-top: 180px;
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-image: url("/services-pics/call-center/accounting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.accounting-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 50% darkness */
+    z-index: 1;
+}
+
+
+.accounting-hero-section h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+
+.accounting-hero-section p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 300;
+}
+
+.accounting-hero-subtext {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+
+
+
+.accounting-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c00000;
+    margin-bottom: 3rem;
+}
+
+/* --- Intro Section --- */
+.accounting-intro-wrapper {
+    margin-top: 14rem;
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.accounting-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.accounting-intro-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.accounting-intro-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.accounting-intro-highlight {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #c00000;
+}
+
+/* --- Core Services Section --- */
+.accounting-core-services-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.accounting-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accounting-service-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accounting-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.accounting-service-icon {
+    color: #c00000;
+    margin-bottom: 1rem;
+}
+
+.accounting-service-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.accounting-service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Why Outsource Section --- */
+.accounting-why-outsource-wrapper {
+    padding: 4rem 2rem;
+    background-color: #f7f8fa;
+}
+
+.accounting-why-outsource-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accounting-why-outsource-item {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.accounting-why-outsource-item:hover {
+    background-color: #c00000;
+    color: #fff;
+}
+
+/* --- Industries We Serve Section --- */
+.accounting-industries-wrapper {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.accounting-industries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accounting-industry-card {
+    background-color: #f7f8fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.accounting-industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #c00000;
+}
+
+.accounting-industry-icon {
+    color: #c00000;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.accounting-industry-card:hover .accounting-industry-icon {
+    transform: scale(1.1);
+}
+
+.accounting-industry-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* --- Final CTA Section --- */
+.accounting-final-cta-wrapper {
+    padding: 4rem 2rem;
+    background-color: #c00000;
+    color: #fff;
+    text-align: center;
+}
+
+.accounting-final-cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.accounting-final-cta-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .accounting-section-title {
+        font-size: 2rem;
+    }
+
+    .accounting-intro-title {
+        font-size: 2.5rem;
+    }
+}

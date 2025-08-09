@@ -27,6 +27,18 @@ function Footer() {
     });
   };
 
+  const WhatsAppIcon = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M16.75 13.96c.25.13.42.2.55.35.13.15.2.33.2.55s-.07.4-.2.55c-.13.15-.3.23-.55.35-.25.13-.58.2-.98.2h-.2c-.48 0-.95-.08-1.4-.23-.45-.15-.85-.38-1.2-.68-.35-.3-.65-.65-.9-1-.25-.35-.45-.75-.6-1.2-.15-.45-.23-.93-.23-1.43s.08-.95.23-1.4c.15-.45.38-.85.68-1.2.3-.35.65-.65 1-.9.35-.25.75-.45 1.2-.6.45-.15.93-.23 1.43-.23h.2c.4 0 .73.07.98.2.25.13.42.2.55.35.13.15.2.33.2.55s-.07.4-.2.55c-.13.15-.3.23-.55.35-.25.13-.5.2-.7.2h-.1c-.25 0-.48.04-.68.13-.2.08-.38.2-.5.35-.13.15-.23.34-.3.55-.08.2-.13.43-.13.68s.05.48.13.68c.08.2.2.38.3.5.13.13.28.23.45.3.18.08.38.13.58.13h.1c.2 0 .43-.04.68-.13.25-.08.45-.2.6-.35.15-.15.25-.3.3-.5.05-.18.08-.38.08-.58s-.03-.38-.08-.53zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.37-.44 4.8-1.25l3.2 1.25-1.25-3.2C19.56 17.37 20 15.73 20 14c0-5.52-4.48-10-10-10zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+    </svg>
+  );
+
   const PhoneIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -113,16 +125,22 @@ function Footer() {
             <div className="contact-info-group">
               <div className="contact-info-item">
                 <PhoneIcon />
-                <a href="tel:800-514-7456">800-514-7456</a>
+                <a href="tel:+917895663417">+91-7895663417</a>
               </div>
               <div className="contact-info-item">
-                <ChatIcon />
-                <a href="/live-chat">Live chat with us</a>
+                <WhatsAppIcon />
+                <a
+                  href="https://wa.me/7895663417"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chat on WhatsApp
+                </a>
               </div>
               <div className="contact-info-item">
                 <MailIcon />
-                <a href="mailto:info@flatworldsolutions.com">
-                  info@flatworldsolutions.com
+                <a href="mailto:contact@apexinfotechsolutions.com">
+                  contact@apexinfotechsolutions.com
                 </a>
               </div>
             </div>
@@ -199,42 +217,42 @@ function Footer() {
                     <a href="/consultant">Contact</a>
                   </li>
                   <li>
-                    <a href="/privacypolicy">Privacy Policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </li>
                 </ul>
               </>
             ),
           },
-          {
-            id: 3,
-            content: (
-              <>
-                <h3>Blog</h3>
-                <div className="underline"></div>
-                <ul>
-                  <li>
-                    <a href="/blog">
-                      How to Source Safely from India Without Visiting
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog">
-                      The True Cost Benefits of Outsourcing to India in 2025
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog">
-                      Digital Marketing in India: What Global Brands Need to
-                      Know
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog">See More...</a>
-                  </li>
-                </ul>
-              </>
-            ),
-          },
+          // {
+          //   id: 3,
+          //   content: (
+          //     <>
+          //       <h3>Blog</h3>
+          //       <div className="underline"></div>
+          //       <ul>
+          //         <li>
+          //           <a href="/blog">
+          //             How to Source Safely from India Without Visiting
+          //           </a>
+          //         </li>
+          //         <li>
+          //           <a href="/blog">
+          //             The True Cost Benefits of Outsourcing to India in 2025
+          //           </a>
+          //         </li>
+          //         <li>
+          //           <a href="/blog">
+          //             Digital Marketing in India: What Global Brands Need to
+          //             Know
+          //           </a>
+          //         </li>
+          //         <li>
+          //           <a href="/blog">See More...</a>
+          //         </li>
+          //       </ul>
+          //     </>
+          //   ),
+          // },
           {
             id: 4,
             content: (

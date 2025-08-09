@@ -47,7 +47,6 @@ function CommonCta() {
     </svg>
   );
 
-  
   return (
     <div className="commonCta-section-container">
       <div className="commonCta-left-panel">
@@ -57,16 +56,16 @@ function CommonCta() {
       <div className="commonCta-right-panel">
         <div className="commonCta-info-item">
           <PhoneIcon />
-          <a href="tel:+1234567890">+1 (234) 567-890</a>
+          <a href="tel:+917895663417">+91-7895663417</a>
         </div>
-        <div className="commonCta-info-item">
+        <div className="commonCta-info-item common-mail">
           <MailIcon />
-          <a href="mailto:experts@example.com">experts@example.com</a>
+          <a href="mailto:contact@apexinfotechsolutions.com">contact@apexinfotechsolutions.com</a>
         </div>
         <div className="commonCta-info-item">
           <WhatsAppIcon />
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/7895663417"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,7 +73,7 @@ function CommonCta() {
           </a>
         </div>
         <div className="commonCta-privacy-policy">
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
       </div>
     </div>

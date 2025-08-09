@@ -23,6 +23,10 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import DataManagement from "./Pages/Services/DataManagement/DataManagement";
+import Creative from "./Pages/Services/Creative/Creative";
+import Software from "./Pages/Services/Software/Software";
+import Website from "./Pages/Services/Website/Website";
+import Digital from "./Pages/Services/Digital/Digital";
 
 function AppContent() {
   const location = useLocation();
@@ -52,7 +56,12 @@ function AppContent() {
         <Route path="/domestic" element={<Domestic/>}/>
         <Route path="/data" element={<DataManagement/>}/>
         <Route path="/callcenter" element={<CallCenter/>}/>
-        <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+        <Route path="/callcenter" element={<CallCenter/>}/>
+        <Route path="/creative" element={<Creative/>}/>
+        <Route path="/software" element={<Software/>}/>
+        <Route path="/website" element={<Website/>}/>
+        <Route path="/digital" element={<Digital/>}/>
+        <Route path="/privacy" element={<PrivacyPolicy/>}/>
         
       </Routes>
       <Footer/>
