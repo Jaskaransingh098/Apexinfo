@@ -19,10 +19,10 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About us</a>
+            <Link href="/about">About us</Link>
           </li>
           <li>
             <Link to="/services">Services</Link>
@@ -32,7 +32,7 @@ function Navbar() {
           </li>
         </ul>
         <button className="demo-button">
-          <a href="/consultant">Contact Us</a>
+          <Link href="/consultant">Contact Us</Link>
         </button>
       </nav>
       <div className="services-bar">

@@ -65,7 +65,7 @@
     margin-bottom: 0.5rem;
 }
 
-.footer-section ul li a {
+.footer-section ul li Link {
     color: #d1d5db;
     text-decoration: none;
     font-size: 0.95rem;

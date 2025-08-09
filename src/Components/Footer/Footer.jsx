@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { motion } from "framer-motion";
 import { FaFacebook, FaTwitter, FaGithub, FaYoutube } from "react-icons/fa";
@@ -208,16 +209,16 @@ function Footer() {
                 <div className="underline"></div>
                 <ul>
                   <li>
-                    <a href="/about">About</a>
+                    <Link href="/about">About</Link>
                   </li>
                   <li>
-                    <a href="/services">Services</a>
+                    <Link href="/services">Services</Link>
                   </li>
                   <li>
-                    <a href="/consultant">Contact</a>
+                    <Link href="/consultant">Contact</Link>
                   </li>
                   <li>
-                    <a href="/privacy">Privacy Policy</a>
+                    <Link href="/privacy">Privacy Policy</Link>
                   </li>
                 </ul>
               </>
