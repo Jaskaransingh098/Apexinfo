@@ -19,10 +19,10 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <Link href="/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About us</Link>
+            <Link to="/about">About us</Link>
           </li>
           <li>
             <Link to="/services">Services</Link>

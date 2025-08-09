@@ -209,16 +209,16 @@ function Footer() {
                 <div className="underline"></div>
                 <ul>
                   <li>
-                    <Link href="/about">About</Link>
+                    <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link href="/services">Services</Link>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
-                    <Link href="/consultant">Contact</Link>
+                    <Link to="/consultant">Contact</Link>
                   </li>
                   <li>
-                    <Link href="/privacy">Privacy Policy</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
                   </li>
                 </ul>
               </>
